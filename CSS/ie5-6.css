@@ -1,0 +1,49 @@
+/*==========================================================
+Stylesheet für Gruppe I.V.S. Uni-Bonn
+Author: Alexis Raptarchis
+
+Contents:
+
+1) Hacks für IE 6...
+
+============================================================*/
+
+* html div.teammember {
+  height: 1%;
+}
+
+* html div.semester {
+  height: 1%;
+}
+
+* html div.researchleft{
+ height: 1%;
+}
+
+* html div.researchright{
+ height: 1%;
+}
+
+* html div.publicationyear{
+ height: 1%;
+}
+
+* html div.publication{
+ height: 1%;
+}
+
+* html #wrapper{
+  height: 1%;
+}
+* html #footnote{
+  height: 1%;
+}
+
+* html #kopfbereich{
+ height: 1%;
+
+}
+
+
+
+
