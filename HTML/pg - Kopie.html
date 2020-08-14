@@ -1,0 +1,235 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text-html" />
+    <title>Informatik 4 - Intelligent Vision Systems Group</title>
+    <!-- Hier das zust&auml;ndinge CSS-->
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <!--[if lte IE 6]>
+  <style type="text/css">
+   @import url(../CSSie5-6.css);
+   </style>
+   <![endif]-->
+</head>
+
+<body id="teaching">
+
+<div id="wrapper">
+
+<!-- ============================================================================ -->
+
+    <div id="kopfbereich">
+		<a href="http://net.cs.uni-bonn.de/wg/intelligent-vision-systems/">
+            	   <h3><img id="logogruppe" src="../Images/Logos/IVS-4-100.png" height="50" /></a></h3>
+<!--
+		<a href="http://net.cs.uni-bonn.de/wg/intelligent-vision-systems/">
+            	   <p>Intelligent Vision Systems Group</p></a>
+-->
+		<a href="http://net.cs.uni-bonn.de/start/">
+		   <h3><img id="logo_cs4" src="../Images/Logos/logo_cs4_100.png" height="50" /></a></h3>
+    </div><!--End kopfbereich-->
+
+<!-- ============================================================================ -->
+
+ <div id="inhalt">
+
+<h3>BA-INF 051 - Projektgruppe Intelligente Sehsysteme</h3>
+
+    <ul class="pre_teaching">
+	    <li class="no_ein"><p>PD Dr. Volker Steinhage</p></li>
+	    <li class="no_ein"><p>Dienstags, 14-16 Uhr, SR 1.047 </p></li>
+	    <li class="no_ein"><p>Vorbesprechung: Dienstag, 8. Sept. 2020, 14 Uhr via <a href="https://bbb.informatik.uni-bonn.de/b/vol-x2d-g4x"><p>https://bbb.informatik.uni-bonn.de/b/vol-x2d-g4x</p></a>
+<!--						<script TYPE="text/javascript" LANGUAGE="JavaScript">
+							<!-- den Code vor Browsern verstecken, die kein JavaScript koennen
+							var prefix = 'steinhage'; var domain = 'cs.uni-bonn.de';
+							document.write('<a href=mailto:' + prefix + '@' + domain + '>');
+							document.write(prefix + '@' + domain + '</'+'a>');
+							// Ende des Versteckens vor alten Browsern -->
+						</script>
+
+		</p></li>
+    </ul>
+<br />
+
+<!-- ============================================================================ -->
+<p>
+<b>Themen</b>:
+<!-- ============================================================================ -->
+
+<!-- ============================================================================ -->
+<p>
+<table id="Feb2017" cellspacing="0" cellpadding="0">
+<tr valign="top" >
+ <td>
+ 	<img src="../Images/Labs/SyntPicsNVIDEA-V3-top.jpg" width="300" border="0" 
+		alt="InstSeg">
+
+	<img src="../Images/Labs/white.jpg" width="300" border="0" 
+		alt="InstSeg">	
+
+	<img src="../Images/Labs/SyntPicsNVIDEA-V3-bot.jpg" width="300" border="0" 
+		alt="InstSeg">
+	<img src="../Images/Labs/white.jpg" width="300" border="0" 
+		alt="InstSeg">
+	<img src="../Images/Labs/SyntPicsDear.jpg" width="300" border="0" 
+		alt="InstSeg">
+ </td>
+ <td width="40"></td>
+ <td> <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+      <b>Instance Rendering von synthet. Daten für Supervised Deep Learning (2 Themen)</b></p>
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+
+	Supervised Deep Learning erfordert große Mengen von annotierten Trainingsdaten. Häufig fehlen entsprechend große Mengen, 
+	sodass annotierten Trainingsdate synthetisch erzeugt werden. In der Computer Vision steht dabei das Rendering von 3D-Szenen 
+	im Vordergrund. Neben regulären RGB-Bildern werden Segmentierungsmasken, Instanzenmasken oder Tiefenbilder gerendert. 
+	Zielsetzung der Arbeiten ist 
+	(1) die Generierung synthetischer Bildsequenzen von animierten Wildtiermodellen mit einer Rendering Engine, 
+	(2) das Training einer Deep-Learning-Architektur sowie 
+	(3) die Evaluierung der Ergebnisse. 
+
+
+
+	Zwingend erforderlich sind Kenntnisse in Computergrafik, Modellierung und Scripting mit Blender und Python oder mit 
+	Unreal Engine und C++. Begründete Alternativvorschläge für Rendering-Engines und Scripting-Umgebungen sind möglich. 
+	Hilfreich aber nicht erforderlich ist Erfahrung mit Deep Learning und Frameworks wie PyTorch oder Tensorflow. </p>
+
+	Oben und mittig: RGB-Bild, Instanzmaske, Tiefenbild, Pose (Quelle: NVIDEA).</p>
+
+	Unten: Synthetisches Rendering eines Rehs mit Objektmaske, RGB-Bild, Tiefenbild 
+
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+ </td>
+ </tr>
+</table>
+<br><br>
+
+<!-- ============================================================================ -->
+
+<p>
+<table id="Feb2017" cellspacing="0" cellpadding="0">
+<tr valign="top" >
+ <td>
+ 	<img src="../Images/Labs/PeopleTracker-V2.jpg" width="300" border="0" 
+		alt="InstAnno">
+ </td>
+ <td width="40"></td>
+ <td> <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+      <b>Tracking (2 Themen)</b></p>
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+
+	Ziel ist die Implementierung eines Tracking-Algorithmus, der auf Künstlichen Neuronalen Netzen basiert. 
+	Dabei wird mit Trainingsdaten aus einem aktuellen Forschungsprojekt gearbeitet. Bevor der Tracking-Algorithmus implementiert wird, gibt es 
+	eine Einarbeitungsphase in Python und PyTorch, mit denen die Implementierung durchgeführt werden soll. Dafür wird zunächst ein Beispiel 
+	für die Detection und Instance Segmentation anhand von Mask R-CNN betrachtet.
+	Das Ziel eines Tracking-Algorithmus ist es, in einem Video Objekte zu detektieren und im Verlauf zu tracken, d.h., jede Detektion (z.B. Bounding Box) 
+	erhält zusätzlich eine target-ID. So können Individuen einer Klasse voneinander unterschieden und verfolgt werden. 
+
+	Generelle Voraussetzungen: Kenntnisse über Künstliche Intelligenz, insbesondere Grundkenntnisse zu Neuronalen Netzen. 
+	Gute Programmierkenntnisse (möglichst in Python; tiefere Python-Kenntnisse können aber auch in der Projektgruppe erlernt werden)
+	
+
+	Es gibt zwei Trackingalgorithmen zur Auswahl:
+
+	<ol>
+  	<li> Chen, Longtao, Xiaojiang Peng, and Mingwu Ren. "Recurrent metric networks and batch multiple hypothesis for multi-object tracking." IEEE Access 7 (2018): 3093-3105. </p>
+
+	<li> Ma, Liqian, et al. "Customized multi-person tracker." Asian Conference on Computer Vision. Springer, Cham, 2018. </p>
+	</ol>
+
+
+ </td>
+ </tr>
+</table>
+
+<br><br>
+
+<!-- ============================================================================ -->
+
+<p>
+<table id="Feb2017" cellspacing="0" cellpadding="0">
+<tr valign="top" >
+ <td>
+ 	<img src="../Images/Labs/AnimalKeypoints.jpg" width="300" border="0" 
+		alt="3DReco">
+ </td>
+ <td width="40"></td>
+ <td> <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+      <b>Animal keypoint detection & pose estimation using deep learning (1 Thema) </b>
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+
+	Die Erkennung von sog. Keypoints bei Tieren hat bedeutende Implikationen für die
+	Bestimmung der Körperhaltung von Tieren und die damit verbunde Verhaltensanalysen.
+	Hier soll auf Deep Learning basierende Methodik zurückgegriffen werden:
+
+	<ol>
+  	<li>Cross-Domain Adaptation for Animal Pose Estimation: </br>
+	https://openaccess.thecvf.com/content_ICCV_2019/html/Cao_Cross-Domain_Adaptation_for_Animal_Pose_Estimation_ICCV_2019_paper.html
+	<li>Detectron2: https://github.com/facebookresearch/detectron2
+	</ol>
+
+	Erwartete Kenntnisse: Verständnis der mathematischen Konzepte (Backprop., CNNs,...) sowie Erfahrung mit Deep-Learning Frameworks, insbes. Pytorch, Tensorflow, Keras, … 
+
+ </td>
+ </tr>
+</table>
+
+<br><br>
+
+<!-- ============================================================================ -->
+		<hr color="#0060AE" size="5" >  <!--  Trennlinie -->
+		
+		<table width="90%" border="0" align="center" cellspacing="20" cellpadding="0">
+			<tr>
+				<td valign="top" align="left">
+					<a href="../index.html">Home</a></td>
+				<td valign="top" align="left">
+					<a href="news.html">News</a></td>
+				<td valign="top" align="left">
+					<a href="teaching.html">Teaching</a></td>
+				<td valign="top" align="left">
+					<a href="projects.html">Projects</a></td>
+				<td valign="top" align="left">
+					<a href="publications.html">Publications</a></td>
+				<td valign="top" align="left">
+					<a href="team.html">Team</a></td>
+			</tr>
+		</table>		
+
+		<hr color="#0060AE" size="5" >  <!--  Trennlinie -->
+		<br><br>
+
+<!-- ============================================================================ -->
+		
+ </div> <!-- End inhalt -->
+
+<!-- ============================================================================ -->
+
+    <div id="footnote">
+      <a href="http://www.uni-bonn.de"><img id="logo_uni" src="../Images/Logos/logo_uni.png" height="49" name="logo_uni" /></a> 
+<!-- 
+-->
+      <a href="http://net.cs.uni-bonn.de/start/"><img id="logo_cs4" src="../Images/Logos/logo_cs4_100.png" height="49" name="logo_cs4" /></a>
+
+    </div><!-- End footnote-->
+
+<!-- ============================================================================ -->
+
+</div> <!-- End wrapper -->
+<div id="spacer"/>
+</body>
+
+</html>
