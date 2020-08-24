@@ -41,16 +41,15 @@
     <ul class="pre_teaching">
 	    <li class="no_ein"><p>PD Dr. Volker Steinhage</p></li>
 	    <li class="no_ein"><p>Dienstags, 14-16 Uhr, SR 1.047 </p></li>
-	    <li class="no_ein"><p>Vorbesprechung: es wird keine zentrale Vorbesprechung geben. 
-		Stattdessen bitte ich interessierte Studierende, die die Module BA-INF 110 "Grundlagen der K&uuml;nstl. Intelligenz" und/oder BA-INF 131 "Intelligente Sehsysteme" 
-		erfolgreich besucht haben, sich bitte per Email fr&uuml;hestm&ouml;glich und sp&auml;testens bis 15. März 2020 an mich zu wenden: 
-						<script TYPE="text/javascript" LANGUAGE="JavaScript">
+	    <li class="no_ein"><p>Vorbesprechung: Dienstag, 8. Sept. 2020, 14 Uhr via <a href="https://bbb.informatik.uni-bonn.de/b/vol-x2d-g4x"><p>https://bbb.informatik.uni-bonn.de/b/vol-x2d-g4x</p></a>
+<!--						<script TYPE="text/javascript" LANGUAGE="JavaScript">
 							<!-- den Code vor Browsern verstecken, die kein JavaScript koennen
 							var prefix = 'steinhage'; var domain = 'cs.uni-bonn.de';
 							document.write('<a href=mailto:' + prefix + '@' + domain + '>');
 							document.write(prefix + '@' + domain + '</'+'a>');
 							// Ende des Versteckens vor alten Browsern -->
 						</script>
+
 		</p></li>
     </ul>
 <br />
@@ -65,13 +64,47 @@
 <table id="Feb2017" cellspacing="0" cellpadding="0">
 <tr valign="top" >
  <td>
- 	<img src="../Images/Labs/InstanceSegm_584x295.jpg" width="180" border="0" 
+	<div>
+ 	<img src="../Images/Labs/SyntPicsNVIDEA-V3-top.jpg" width="300" border="0" style=display:block
 		alt="InstSeg">
+
+	<img src="../Images/Labs/white.jpg" width="300" border="0" style=display:block
+		alt="InstSeg">	
+
+	<img src="../Images/Labs/SyntPicsNVIDEA-V3-bot.jpg" width="300" border="0" style=display:block
+		alt="InstSeg">
+	<img src="../Images/Labs/white.jpg" width="300" border="0" style=display:block
+		alt="InstSeg">
+	<img src="../Images/Labs/SyntPicsDear.jpg" width="300" border="0" style=display:block
+		alt="InstSeg">
+	</div>
  </td>
  <td width="40"></td>
  <td> <p align="justify">
       <font face="arial,helvetica,sans-serif">
-      <b>Instance Segmentation - Anwendung: CNN-basierte visuelle Erkennung und Lokalisierung von Pflanzenorganen.</b></p>
+      <b>Instance Rendering von synthet. Daten für Supervised Deep Learning (2 Themen)</b></p>
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+
+	Supervised Deep Learning erfordert große Mengen von annotierten Trainingsdaten. Häufig fehlen entsprechend große Mengen, 
+	sodass annotierten Trainingsdaten synthetisch erzeugt werden. In der Computer Vision steht dabei das Rendering von 3D-Szenen 
+	im Vordergrund. Neben regulären RGB-Bildern werden Segmentierungsmasken, Instanzenmasken oder Tiefenbilder gerendert. 
+	Zielsetzung der Arbeiten ist 
+	(1) die Generierung synthetischer Bildsequenzen von animierten Wildtiermodellen mit einer Rendering Engine, 
+	(2) das Training einer Deep-Learning-Architektur sowie 
+	(3) die Evaluierung der Ergebnisse. 
+
+
+
+	Zwingend erforderlich sind Kenntnisse in Computergrafik, Modellierung und Scripting mit Blender und Python oder mit 
+	Unreal Engine und C++. Begründete Alternativvorschläge für Rendering-Engines und Scripting-Umgebungen sind möglich. 
+	Hilfreich aber nicht erforderlich ist Erfahrung mit Deep Learning und Frameworks wie PyTorch oder Tensorflow. </p>
+
+	Oben und mittig: RGB-Bild, Instanzmaske, Tiefenbild, Pose (Quelle: NVIDIA).</p>
+
+	Unten: Synthetisches Rendering eines Rehs mit Objektmaske, RGB-Bild, Tiefenbild 
+
       </font>
       <p align="justify">
       <font face="arial,helvetica,sans-serif">
@@ -86,16 +119,37 @@
 <table id="Feb2017" cellspacing="0" cellpadding="0">
 <tr valign="top" >
  <td>
- 	<img src="../Images/Labs/InstanceAnnotation_740x400.jpg" width="180" border="0" 
+ 	<img src="../Images/Labs/PeopleTracker-V2.jpg" width="300" border="0" 
 		alt="InstAnno">
  </td>
  <td width="40"></td>
  <td> <p align="justify">
       <font face="arial,helvetica,sans-serif">
-      <b>Instance Annotation - Anwendung: CNN-basierte Annotation von Pflanzenorganen in Bildvorlagen.</b></p>
+      <b>Tracking (2 Themen)</b></p>
       </font>
       <p align="justify">
       <font face="arial,helvetica,sans-serif">
+
+	Ziel ist die Implementierung eines Tracking-Algorithmus, der auf Künstlichen Neuronalen Netzen basiert. 
+	Dabei wird mit Trainingsdaten aus einem aktuellen Forschungsprojekt gearbeitet. Bevor der Tracking-Algorithmus implementiert wird, gibt es 
+	eine Einarbeitungsphase in Python und PyTorch, mit denen die Implementierung durchgeführt werden soll. Dafür wird zunächst ein Beispiel 
+	für die Detection und Instance Segmentation anhand von Mask R-CNN betrachtet.
+	Das Ziel eines Tracking-Algorithmus ist es, in einem Video Objekte zu detektieren und im Verlauf zu tracken, d.h., jede Detektion (z.B. Bounding Box) 
+	erhält zusätzlich eine target-ID. So können Individuen einer Klasse voneinander unterschieden und verfolgt werden. 
+
+	Generelle Voraussetzungen: Kenntnisse über Künstliche Intelligenz, insbesondere Grundkenntnisse zu Neuronalen Netzen. 
+	Gute Programmierkenntnisse (möglichst in Python; tiefere Python-Kenntnisse können aber auch in der Projektgruppe erlernt werden)
+	
+
+	Es gibt zwei Trackingalgorithmen zur Auswahl:
+
+	<ol>
+  	<li> Chen, Longtao, Xiaojiang Peng, and Mingwu Ren. "Recurrent metric networks and batch multiple hypothesis for multi-object tracking." IEEE Access 7 (2018): 3093-3105. </p>
+
+	<li> Ma, Liqian, et al. "Customized multi-person tracker." Asian Conference on Computer Vision. Springer, Cham, 2018. </p>
+	</ol>
+
+
  </td>
  </tr>
 </table>
@@ -108,60 +162,29 @@
 <table id="Feb2017" cellspacing="0" cellpadding="0">
 <tr valign="top" >
  <td>
- 	<img src="../Images/Labs/PartReco_240x166.jpg" width="180" border="0" 
+ 	<img src="../Images/Labs/AnimalKeypoints.jpg" width="300" border="0" 
 		alt="3DReco">
  </td>
  <td width="40"></td>
  <td> <p align="justify">
       <font face="arial,helvetica,sans-serif">
-      <b>Semantic Labeling - CNN-basierte Segmentierung von 3D-Punktwolken</b>
+      <b>Animal keypoint detection & pose estimation using deep learning (1 Thema) </b>
       </font>
       <p align="justify">
       <font face="arial,helvetica,sans-serif">
- </td>
- </tr>
-</table>
 
-<br><br>
+	Die Erkennung von sog. Keypoints bei Tieren hat bedeutende Implikationen für die
+	Bestimmung der Körperhaltung von Tieren und die damit verbunden Verhaltensanalysen.
+	Hier soll auf Deep Learning basierende Methodik zurückgegriffen werden:
 
-<!-- ============================================================================ -->
+	<ol>
+  	<li>Cross-Domain Adaptation for Animal Pose Estimation: </br>
+	https://openaccess.thecvf.com/content_ICCV_2019/html/Cao_Cross-Domain_Adaptation_for_Animal_Pose_Estimation_ICCV_2019_paper.html
+	<li>Detectron2: https://github.com/facebookresearch/detectron2
+	</ol>
 
-<p>
-<table id="Feb2017" cellspacing="0" cellpadding="0">
-<tr valign="top" >
- <td>
- 	<img src="../Images/Labs/Deer-1599x534.jpg" width="180" border="0" 
-		alt="OpticalFlow">
- </td>
- <td width="40"></td>
- <td> <p align="justify">
-      <font face="arial,helvetica,sans-serif">
-      <b>Optical Flow - CNN-basiertes visuelles Tracking von Tieren in Kamerafallenclips</b></p>
-      </font>
-      <p align="justify">
-      <font face="arial,helvetica,sans-serif">
- </td>
- </tr>
-</table>
+	Erwartete Kenntnisse: Verständnis der mathematischen Konzepte (Backprop., CNNs,...) sowie Erfahrung mit Deep-Learning Frameworks, insbes. Pytorch, Tensorflow, Keras, … 
 
-<br><br>
-
-<!-- ============================================================================ -->
-
-<p>
-<table id="Feb2017" cellspacing="0" cellpadding="0">
-<tr valign="top" >
- <td>
- 	<img src="../Images/Labs/Deer1-ModSter.jpg" width="180" border="0" 
-		alt="MotionStereo">
- </td>
- <td width="40"></td>
- <td> <p align="justify">
-      <font face="arial,helvetica,sans-serif">
-      <b>Motion Stereo - Tiefenbilder von Tieren in Kamerafallenclips</b></p>
-      </font>
-      <p align="justify">
-      <font face="arial,helvetica,sans-serif">
  </td>
  </tr>
 </table>
