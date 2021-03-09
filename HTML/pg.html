@@ -40,8 +40,8 @@
 
     <ul class="pre_teaching">
 	    <li class="no_ein"><p>PD Dr. Volker Steinhage</p></li>
-	    <li class="no_ein"><p>Dienstags, 14-16 Uhr, SR 1.047 </p></li>
-	    <li class="no_ein"><p>Vorbesprechung: Dienstag, 8. Sept. 2020, 14 Uhr via <a href="https://bbb.informatik.uni-bonn.de/b/vol-x2d-g4x"><p>https://bbb.informatik.uni-bonn.de/b/vol-x2d-g4x</p></a>
+	    <li class="no_ein"><p>Dienstags, 14-16 Uhr, online </p></li>
+	    <li class="no_ein"><p>Vorbesprechung: Donnerstag, 18. März 2020, 16.15 Uhr via <a href="https://bbb.informatik.uni-bonn.de/b/vol-x2d-g4x">https://bbb.informatik.uni-bonn.de/b/vol-x2d-g4x</a>
 <!--						<script TYPE="text/javascript" LANGUAGE="JavaScript">
 							<!-- den Code vor Browsern verstecken, die kein JavaScript koennen
 							var prefix = 'steinhage'; var domain = 'cs.uni-bonn.de';
@@ -82,7 +82,8 @@
  <td width="40"></td>
  <td> <p align="justify">
       <font face="arial,helvetica,sans-serif">
-      <b>Instance Rendering von synthet. Daten für Supervised Deep Learning (2 Themen)</b></p>
+      <b>Instance Rendering von synthet. Daten für Supervised Deep Learning</b></p>
+<!--  ============================================================================ -->
       </font>
       <p align="justify">
       <font face="arial,helvetica,sans-serif">
@@ -114,41 +115,91 @@
 <br><br>
 
 <!-- ============================================================================ -->
+<p>
+<table id="Feb2017" cellspacing="0" cellpadding="0">
+<tr valign="top" >
+ <td>
+	<div>
+ 	<img src="../Images/Labs/SegmentEveryThing.jpg" width="300" border="0" style=display:block
+		alt="InstSeg">
+	</div>
+ </td>
+ <td width="40"></td>
+ <td> <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+      <b>Learning to Segment Every Thing with Few Annotations</b></p>
+<!--  ============================================================================ -->
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+
+	Beim Wildtiermonitoring stellt die Detektion und Lokalisierung von Tieren eine anspruchsvolle Aufgabe dar, 
+	die mit Methoden des Supervised Deep Learnings angegangen wird. Dafür sind große Mengen von Trainingsdaten 
+	erforderlich, die per Hand annotiert werden müssen. Die Lokalisierung kann dabei entweder mittels Bounding-Boxes 
+	(grob) oder mittels Instanzmasken (fein) erfolgen. Während erstere mit relativ geringem Aufwand annotiert werden 
+	können, so ist die Annotation bei Instanzmasken sehr viel aufwändiger. 
+
+	Die Methode von <a href="http://ronghanghu.com/seg_every_thing/">Hu et al. 2018</a> erlaubt 
+	es hingegen, auf solche manuell annotierten Instanzmasken zugunsten von Bounding-Boxes zu verzichten. Trotzdem 
+	können mittels dieser Methode Instanzmasken erzeugt werden, indem das Wissen, welches zur Vorhersage von 
+	Bounding-Boxes genutzt wird, auf die Vorhersage der Instanzmasken übertragen wird. Das Ziel ist die Anwendung der 
+	Methodik von Hu et al. 2018 auf mehrere Datensätze in der Domäne des Wildtiermonitorings. 
+
+	Falls für den jeweiligen Datensatz keine manuell annotierten Bounding-Boxes zum Training zur Verfügung stehen, soll ein robustes 
+	Modell zur automatisierten Erzeugung ebd. (<a href="https://arxiv.org/abs/1907.06772">Beery et al. 2019)</a> eingesetzt werden. 
+	Ein weiteres Ziel ist die Fusionierung der Ansätze von Hu et al. 2018 und  Beery et al. 2019 in einem grafischen Annotationstool. </p>
+
+	Erforderlich sind grundlegende Kenntnisse im Bereich des Deep Learnings und in Python.</p>
+
+	Bildquelle: <a href="https://emammal.si.edu/">eMammal</a>
+
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+ </td>
+ </tr>
+</table>
+<br><br>
+
+<!-- ============================================================================ -->
+<!-- ============================================================================ -->
 
 <p>
 <table id="Feb2017" cellspacing="0" cellpadding="0">
 <tr valign="top" >
  <td>
- 	<img src="../Images/Labs/PeopleTracker-V2.jpg" width="300" border="0" 
+ 	<img src="../Images/Labs/ReId.jpg" width="300" border="0" 
 		alt="InstAnno">
  </td>
  <td width="40"></td>
  <td> <p align="justify">
       <font face="arial,helvetica,sans-serif">
-      <b>Tracking (2 Themen)</b></p>
+      <b>Re-Identification (2 Themen / 2 Projektgruppenteilnehmende)</b></p>
+<!-- ============================================================================ -->
       </font>
       <p align="justify">
       <font face="arial,helvetica,sans-serif">
 
-	Ziel ist die Implementierung eines Tracking-Algorithmus, der auf Künstlichen Neuronalen Netzen basiert. 
-	Dabei wird mit Trainingsdaten aus einem aktuellen Forschungsprojekt gearbeitet. Bevor der Tracking-Algorithmus implementiert wird, gibt es 
-	eine Einarbeitungsphase in Python und PyTorch, mit denen die Implementierung durchgeführt werden soll. Dafür wird zunächst ein Beispiel 
-	für die Detection und Instance Segmentation anhand von Mask R-CNN betrachtet.
-	Das Ziel eines Tracking-Algorithmus ist es, in einem Video Objekte zu detektieren und im Verlauf zu tracken, d.h., jede Detektion (z.B. Bounding Box) 
-	erhält zusätzlich eine target-ID. So können Individuen einer Klasse voneinander unterschieden und verfolgt werden. 
+	Das Ziel ist die Analyse und die Anpassung einer Implementierung eines modernen Re-Identification Ansatzes, der auf Künstlichen Neuronalen Netzen basiert. 
+	Dabei wird mit Trainingsdaten aus einem aktuellen Forschungsprojekt gearbeitet. Zwei Re-Identification Ansätze werden betrachtet, beide basieren auf Python und PyTorch.
 
-	Generelle Voraussetzungen: Kenntnisse über Künstliche Intelligenz, insbesondere Grundkenntnisse zu Neuronalen Netzen. 
-	Gute Programmierkenntnisse (möglichst in Python; tiefere Python-Kenntnisse können aber auch in der Projektgruppe erlernt werden)
+	Das Ziel eines Re-Identification-Algorithmus ist es, in einem Bild oder Video Objekte, z.B. individuelle Personen, wiederzuerkennen. Es geht also nicht nur darum, 
+	ein Objekt allgemein zu detektieren und zu klassifizieren, sondern jedes einzelne Individuum zu unterscheiden. Die angegebenen Re-Identification Verfahren basieren 
+	auf einer Personenwiedererkennung. 
+	Hier soll untersucht werden, ob sich die Verfahren auf Videodaten von Wildtieren übertragen lassen. Mögliche Probleme und Unterschiede bei der Anwendung auf Wildtierdaten 
+	sollen herausgearbeitet werden.</p>
 	
-
-	Es gibt zwei Trackingalgorithmen zur Auswahl:
+	Es gibt zwei Re-Identification Ansätze zur Auswahl für die Teilnehmenden:</p>
 
 	<ol>
-  	<li> Chen, Longtao, Xiaojiang Peng, and Mingwu Ren. "Recurrent metric networks and batch multiple hypothesis for multi-object tracking." IEEE Access 7 (2018): 3093-3105. </p>
+  	<li> <a href="https://arxiv.org/pdf/2101.10774.pdf"> Lightweight Multi-Branch Network for Person Re-Identification.</a> </p>
 
-	<li> Ma, Liqian, et al. "Customized multi-person tracker." Asian Conference on Computer Vision. Springer, Cham, 2018. </p>
+	<li> <a href="https://arxiv.org/pdf/2010.05435.pdf"> Top-DB-Net: Top DropBlock for Activation Enhancement in Person Re-Identification.</a> </p>
 	</ol>
 
+	Erforderlich sind grundlegende Kenntnisse im Bereich Neuronaler Netze und KI sowie grundlegende Programmierkenntnisse in Python.</p>
+
+	Bildquelle: <a href="https://arxiv.org/pdf/2010.05435.pdf"> Top-DB-Net</a> bzw. eig. Datenquelle.
 
  </td>
  </tr>
@@ -162,28 +213,28 @@
 <table id="Feb2017" cellspacing="0" cellpadding="0">
 <tr valign="top" >
  <td>
- 	<img src="../Images/Labs/AnimalKeypoints.jpg" width="300" border="0" 
+ 	<img src="../Images/Labs/Weng.jpg" width="300" border="0" 
 		alt="3DReco">
  </td>
  <td width="40"></td>
  <td> <p align="justify">
       <font face="arial,helvetica,sans-serif">
-      <b>Animal keypoint detection & pose estimation using deep learning (1 Thema) </b>
+      <b>3D Classification and Tracking</b>
+<!-- ============================================================================ -->
       </font>
       <p align="justify">
       <font face="arial,helvetica,sans-serif">
 
-	Die Erkennung von sog. Keypoints bei Tieren hat bedeutende Implikationen für die
-	Bestimmung der Körperhaltung von Tieren und die damit verbunden Verhaltensanalysen.
-	Hier soll auf Deep Learning basierende Methodik zurückgegriffen werden:
+	Ziel ist, die mehrstufige Architektur von <a href="https://arxiv.org/pdf/1907.03961.pdf">Weng et al. 2020</a> zunächst umzusetzen. 
+	Hierbei sollen anfangs 3D Punktwolken klassifiziert werden. Daraufhin sollen solche erkannten Objekte des
+	Kalman-Filters verfolgt werden. Dazu sollen Ergebnisse visualisiert und evaluiert werden. Zuletzt
+	sollten einzelne Systeme der Architektur optimiert werden bzw. auf neue Daten transferiert
+	werden.</p>
+	Hierzu sollten (sehr-)gute Kenntnisse in Python (+ eventuell Cpp) und DL-Frameworks wie Pytorch
+	vorliegen. Zudem müssen grundlegende Konzepte der KI und Neuronaler Netze, aber auch
+	klassische Algorithmen wie der Kalman-Filter, verstanden sein.</p>
 
-	<ol>
-  	<li>Cross-Domain Adaptation for Animal Pose Estimation: </br>
-	https://openaccess.thecvf.com/content_ICCV_2019/html/Cao_Cross-Domain_Adaptation_for_Animal_Pose_Estimation_ICCV_2019_paper.html
-	<li>Detectron2: https://github.com/facebookresearch/detectron2
-	</ol>
-
-	Erwartete Kenntnisse: Verständnis der mathematischen Konzepte (Backprop., CNNs,...) sowie Erfahrung mit Deep-Learning Frameworks, insbes. Pytorch, Tensorflow, Keras, … 
+	Bildquelle: <a href="https://arxiv.org/pdf/1907.03961.pdf">Weng et al. 2020</a>
 
  </td>
  </tr>
@@ -197,34 +248,43 @@
 <table id="Feb2017" cellspacing="0" cellpadding="0">
 <tr valign="top" >
  <td>
- 	<img src="../Images/Labs/MiDaS.jpg" width="300" border="0" 
+ 	<img src="../Images/Labs/Butterflies.jpg" width="300" border="0" 
 		alt="3DReco">
  </td>
  <td width="40"></td>
  <td> <p align="justify">
       <font face="arial,helvetica,sans-serif">
-      <b>Depth estimation from monocular images using deep learning to generate annotated RGB-D data (1 Thema) </b>
+      <b>Instance Segmentation on large scale Images</b>
+<!-- ============================================================================ -->
       </font>
       <p align="justify">
       <font face="arial,helvetica,sans-serif">
 
-	Das Internet bietet zahlreiche Quellen für annotierte Bild/Videodaten. Annotierte 2,5-Bild/Videodaten bzw. RGB-D-Daten sind hingegen seltener zu finden.
-	Deep-Learning-basierte Tiefenschätzungen auf der Basis von annotierten monokularen Bilddaten (z.B. MiDaS) sind hier eine attraktive Option. 
-	Aufgabe ist hier also die Erzeugung von annotierten RGB-D-Daten aus annotierten monokularen Bild/Videodaten. 
-	Für Videodaten sind zusätzlich Methoden von Optical Flow einzusetzen. Von Stereokameras erzeugte 2,5-Bild/Videodaten liegen als Ground Truth zum Vergleich vor.
+	Zur Digitalisierung von bestehenden Tierkollektionen werden bereits verschiedenste
+	automatisierte Systeme eingesetzt (z.B. <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0143402"> InSelect)</a>.
+	Diese verwenden oftmals klassische Algorithmen der Bildverarbeitung und können demnach durch einen Deep Learning basierten Ansatz optimiert werden. 
+	Die Aufgabe besteht darin, auf hochaufgelösten Sammlungs-Kästen von Faltern und Käfern Instance Segmentation durchzuführen um Exemplare zu 
+	lokalisieren und zu identifizieren. Hierbei müssen aufgrund der Bildgrößen auf spezielle Methoden gesetzt werden. </p>
+
+	Erforderte Grundkenntnisse sind dabei in Python und im Bereich Deep Learning, z.b. das DL Framework sowie die jeweiligen Algorithmen und Netzwerk Architekturen.</p>
+
+	Bildquelle: <a href="https://www.zfmk.de/en/research">ZFMK Bonn</a>
 
  </td>
  </tr>
 </table>
+
+<br><br>
+
 
 <br><br>
 
 Termine:
 <ul>
-<li> Prioliste bis Do, 10.09.20, 14 Uhr </li>
-<li> Zuordnungsmitteilung bis Fr, 11.09.20, 18 Uhr </li>
-<li> 2-seitig. Expose (Ziel,Daten und Methoden,Zeitplanung) bis Do, 17.09.20, 14 Uhr </li>
-<li> Start der wöchentl. PG-Jour Fixe: Di, 27.10.20, 14.00 s.t. per BBB mit Präsentationen der ersten Zwischenergebnisse </li>
+<li> Prioliste per Email bis Mo, 22.03.2021, 10 Uhr</li>
+<li> Zuordnungsmitteilung bis Mi, 24.03.2021, 18 Uhr </li>
+<li> 2-seitig. Expose (Ziel,Daten und Methoden,Zeitplanung) bis Mi, 31.03.2021, 14 Uhr </li>
+<li> Start der wöchentl. PG-Jour Fixe: Di, 13.04.2021, 14.00 s.t. per BBB mit Präsentationen der ersten Zwischenergebnisse </li>
 </ul>
 <br><br>
 
