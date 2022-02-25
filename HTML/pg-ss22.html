@@ -1,0 +1,281 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text-html" />
+    <title>Informatik 4 - Intelligent Vision Systems Group</title>
+    <!-- Hier das zust&auml;ndinge CSS-->
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <!--[if lte IE 6]>
+  <style type="text/css">
+   @import url(../CSSie5-6.css);
+   </style>
+   <![endif]-->
+</head>
+
+<body id="teaching">
+
+<div id="wrapper">
+
+<!-- ============================================================================ -->
+
+    <div id="kopfbereich">
+		<a href="http://net.cs.uni-bonn.de/wg/intelligent-vision-systems/">
+            	   <h3><img id="logogruppe" src="../Images/Logos/IVS-4-100.png" height="50" /></a></h3>
+<!--
+		<a href="http://net.cs.uni-bonn.de/wg/intelligent-vision-systems/">
+            	   <p>Intelligent Vision Systems Group</p></a>
+-->
+		<a href="http://net.cs.uni-bonn.de/start/">
+		   <h3><img id="logo_cs4" src="../Images/Logos/logo_cs4_100.png" height="50" /></a></h3>
+    </div><!--End kopfbereich-->
+
+<!-- ============================================================================ -->
+
+ <div id="inhalt">
+
+<h3>BA-INF 051 - Projektgruppe Intelligente Sehsysteme</h3>
+
+    <ul class="pre_teaching">
+	    <li class="no_ein"><p>PD Dr. Volker Steinhage</p></li>
+	    <li class="no_ein"><p>Dienstags, 14-16 Uhr, online </p></li>
+	    <li class="no_ein"><p>Vorbesprechung: Donnerstag, 23. Sept. 2021, 14 Uhr via <a href="https://bbb.informatik.uni-bonn.de/b/vol-ung-npn">https://bbb.informatik.uni-bonn.de/b/vol-ung-npn</a>
+<!--						<script TYPE="text/javascript" LANGUAGE="JavaScript">
+							<!-- den Code vor Browsern verstecken, die kein JavaScript koennen
+							var prefix = 'steinhage'; var domain = 'cs.uni-bonn.de';
+							document.write('<a href=mailto:' + prefix + '@' + domain + '>');
+							document.write(prefix + '@' + domain + '</'+'a>');
+							// Ende des Versteckens vor alten Browsern -->
+						</script>
+
+		</p></li>
+    </ul>
+<br />
+
+<!-- ============================================================================ -->
+<p>
+<b>Themen</b>:
+<!-- ============================================================================ -->
+
+<!-- ============================================================================ -->
+<p>
+<table id="Feb2017" cellspacing="0" cellpadding="0">
+<tr valign="top" >
+ <td>
+	<div>
+ 	<img src="../Images/Labs/simclr.png" width="300" border="0" style=display:block
+		alt="SimCLR">
+	</div>
+ </td>
+ <td width="40"></td>
+ <td> <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+      <b>Evaluation des Datenbedarfs diverser Self-Supervised-Modelle</b></p>
+<!--  ============================================================================ -->
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+	Herkömmliche, fully supervised Deep-Learning-Verfahren benötigen große Mengen an Trainingsdaten, welche manuell annotiert werden müssen. Im Gegensatz dazu versprechen self-supervised Methoden ein Lernen nur aus Rohdaten, ohne jegliche Annotation (<a href="https://ieeexplore.ieee.org/abstract/document/9086055">Jing et al. 2020</a>). Hierbei lernt das Modell, eine nützliche interne Repräsentation der Eingabedaten zu erzeugen. Diese Repräsentation kann dann in einem Fine-Tuning-Schritt zur Lösung komplexer Aufgaben wie Klassifikation, Detektion oder Segmentierung eingesetzt werden. Self-supervised Methoden können nicht nur den Annotationsaufwand verringern, sondern auch neue Datenquellen nutzbar machen. Doch wie umfangreich müssen diese Datenquellen für self-supervised Learning sein? Diese Fragestellung soll hier erörtert und folgende self-supervised Methodiken diesbezüglich vergleichend evaluiert werden:
+	<ul>
+		<li><a href="https://arxiv.org/abs/2006.10029">Chen et al. 2020</a></li>
+		<li><a href="https://arxiv.org/abs/2006.07733">Grill et al. 2020</a></li>
+		<li><a href="https://arxiv.org/abs/2011.10043">Xie et al. 2020</a></li>
+		<li><a href="https://arxiv.org/abs/2103.03230">Zbontar et al. 2021</a></li>
+	</ul>
+	Die Evaluation und der Vergleich der Methodiken soll auf unterschiedlich großen Teilmengen des ImageNet-Datensatzes (<a href="https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf">Krizhevsky et al. 2012</a>) durchgeführt werden.</p>
+
+	Bildquelle: <a href="https://arxiv.org/abs/2006.10029">Chen et al. 2020</a>
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+ </td>
+ </tr>
+</table>
+<br><br>
+
+<!-- ============================================================================ -->
+<p>
+<table id="Feb2017" cellspacing="0" cellpadding="0">
+<tr valign="top" >
+ <td>
+	<div>
+ 	<img src="../Images/Labs/3dmovies.png" width="300" border="0" style=display:block
+		alt="3D-Movies">
+	</div>
+ </td>
+ <td width="40"></td>
+ <td> <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+      <b>Tiefenbilder aus 3D-Filmen</b></p>
+<!--  ============================================================================ -->
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+
+	Tiefenbilder, welche jedem Pixel eine Entfernung zuweisen, können auf vielfältige Weise genutzt werden, beispielsweise für die Verbesserung von Detektionsmodellen oder die 3D-Rekonstruktion von Umgebungen. Im Gegensatz zu herkömmlichen Farbbildern ist die Aufnahme von Tiefenbildern jedoch komplexer und öffentlich verfügbare Datensätze sind somit weniger umfangreich. Um die Vorteile von Tiefenbildern aber mit Deep-Learning-Verfahren nutzen zu können, braucht man eben diese umfangreicheren Datensätze. Eine Möglichkeit zur Beschaffung stellen 3D-Filme dar (<a href="https://arxiv.org/abs/1907.01341v3">Ranftl et al. 2020</a>). Der 3D-Effekt entsteht durch die Aufnahme der Szene durch zwei seitlich versetzte Kameras (Stereokamera), sodass nähere Objekte in beiden Bildern weiter voneinander entfernt erscheinen als Hintergrundobjekte. Aus dieser <i>Disparität</i> lässt sich entsprechend eine (dimensionslose) Entfernung bestimmen. Das Ziel ist, die Methodik von <a href="https://arxiv.org/abs/1907.01341v3">Ranftl et al. 2020</a> zur Extraktion von Tiefenbildern aus 3D-Filmen zunächst zu replizieren. Zusätzlich soll die Frage erörtert werden, wie informative und nicht-redundante Einzelbilder aus den Filmen sinnvoll ausgewählt werden können. Des Weiteren sollen drei verschiedene Methoden zur Bestimmung der Stereo-Korrespondenz mithilfe der im ersten Schritt extrahierten Daten evaluiert und verglichen werden (<a href="https://ieeexplore.ieee.org/abstract/document/4359315/">Hirschmuller et al. 2008</a>, <a href="https://github.com/fabiotosi92/SMD-Nets">Tosi et al. 2021</a>, <a href="https://arxiv.org/abs/2007.12140">Tankovich et al. 2021</a>).</p></p>
+
+	Bildquelle: <a href="https://arxiv.org/abs/1907.01341v3">Ranftl et al. 2020</a>
+
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+ </td>
+ </tr>
+</table>
+<br><br>
+
+<!-- ============================================================================ -->
+
+<p>
+	<table id="Feb2017" cellspacing="0" cellpadding="0">
+	<tr valign="top" >
+	 <td>
+		 <img src="../Images/Labs/visTR.png" width="300" border="0" 
+			alt="InstAnno">
+	 </td>
+	 <td width="40"></td>
+	 <td> <p align="justify">
+		  <font face="arial,helvetica,sans-serif">
+		  <b>Improved Instance Segmentation in Videos</b></p>
+	<!-- ============================================================================ -->
+		  </font>
+		  <p align="justify">
+			  <font face="arial,helvetica,sans-serif">
+		Bei der herkömmlichen Instanz Segmentierung, wird auf dem eingegebenen Bild, die Objektklasse sowie eine pro-pixel Objekt-Maskierung bestimmt. Während dies eine allgemeine Lösung für herkömmliche Daten ist, kann die performanz auf schweren Bildern abfallen. Eine Lösung ist dabei, falls vorhanden, die Kontektinformationen eines ganzen Videoclips zu verwenden um mehr Informationen außerhalb des aktuellen Bilds einzubringen. In diesem Projekt geht es darum zunächst eine kurze Einarbeitung in die Netzwerkarchitektur vorzunehmen. Darauf gefolgt, soll dann auf einem Infrarot Videostream von Kamerafallen gearbeitet werden. Ziel des Projekts ist es erfolgreich auf dem Datensatz und mit dem Neuronal Netz zu arbeiten. Dabei soll eine vergleichende Evaluation mit aktuell vorliegenden Ergebnissen gemacht werden.
+
+		<ul>
+			<li><a href="https://openaccess.thecvf.com/content/CVPR2021/html/Wang_End-to-End_Video_Instance_Segmentation_With_Transformers_CVPR_2021_paper.html">Video Instance Segmentation with Transformers</a></li>
+		</ul>
+		Bildquelle: <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Wang_End-to-End_Video_Instance_Segmentation_With_Transformers_CVPR_2021_paper.html"> VisTR </a>
+	 </td>
+	 </tr>
+	</table>
+	
+	<br><br>
+	
+	<!-- ============================================================================ -->
+
+<!-- ============================================================================ -->
+
+<p>
+	<table id="Feb2017" cellspacing="0" cellpadding="0">
+	<tr valign="top" >
+	 <td>
+		 <img src="../Images/Labs/prcnn.png" width="300" border="0" 
+			alt="InstAnno">
+	 </td>
+	 <td width="40"></td>
+	 <td> <p align="justify">
+		  <font face="arial,helvetica,sans-serif">
+		  <b>3D Object Detection using RGB-D Videos</b></p>
+	<!-- ============================================================================ -->
+		  </font>
+		  <p align="justify">
+			  <font face="arial,helvetica,sans-serif">
+		Es sei bekannt, dass durch einen Domain-wechsel von 2D hin zu einem dreidimensionalen Raum die Präzision und Qualität der Objekterkennungen verbessert werden kann. In diesem Projekt soll es nun darum gehen 3D Object detection auf einem Kamerafallen Datensatz anzuwenden. Nach einer Initialen Einarbeitungszeit auf <a href="http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d">KITTI 2015</a> soll dann auf dem eigenen Datensatz weitergearbeitet werden. Dabei ist das Ziel eine Analyse der Transferierbarkeit des Neuronal Netzes auf neue Daten so wie eine Evaluation der Performanz. Ein weiterer Teil der Arbeit wird die Vervollständigung  von Annotationen sein.
+
+		<ul>
+			<li><a href="https://arxiv.org/abs/2104.09804">SE-SSD Zheng et al. 2021</a></li>
+		</ul>
+		Bildquelle: <a href="https://arxiv.org/abs/2104.09804"> SE-SSD </a>
+	 </td>
+	 </tr>
+	</table>
+	
+	<br><br>
+	
+	<!-- ============================================================================ -->
+
+
+<!-- ============================================================================ -->
+
+<p>
+<table id="Feb2017" cellspacing="0" cellpadding="0">
+<tr valign="top" >
+ <td>
+ 	<img src="../Images/Labs/Inst_Seg_PG.jpg" width="300" border="0" 
+		alt="InstAnno">
+ </td>
+ <td width="40"></td>
+ <td> <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+      <b>Instance Segmentation (2 Themen / 2 Projektgruppenteilnehmende)</b></p>
+<!-- ============================================================================ -->
+      </font>
+      <p align="justify">
+		  <font face="arial,helvetica,sans-serif">
+
+		  	Das Ziel dieser Projektgruppe ist die Analyse und die Anpassung einer Implementierung eines aktuellen Instance Segmentation Ansatzes, der auf Künstlichen Neuronalen Netzen basiert. 
+			Dabei wird mit Trainingsdaten aus einem aktuellen Forschungsprojekt gearbeitet.
+		  	
+		  Das Ziel einer Instance Segmentation ist es, in einem Bild oder Video einzelne Objekte mit einer Bounding Box und einer exakten Segmentierungsmaske zu detektieren. 
+		  Der Begriff Instance bedeutet in diesem Kontext, dass jedes einzelne Individuum einer Objektklasse getrennt voneinander erkannt werden soll (Unterschied zur Semantic Segmentation). 
+		  In dieser Projektgruppe soll untersucht werden, ob sich das jeweils gewählte Verfahren für eine erfolgreiche Instance Segmentation in Videodaten von Wildtieren nutzen lassen. 
+		  Der Ansatz (1) verfolgt dabei Idee, die Segmentierungserkenntnisse von anderen Objektklassen auf neue unbekannte Objektklassen zu übertragen. 
+		  Der zweite Ansatz (2) benutzt verschiedene Implementierungen abhängig davon, ob Bild- oder Videodaten zur Verfügung stehen. Mögliche Probleme und Unterschiede bei der Anwendung auf Wildtierdaten sollen herausgearbeitet werden. 
+		  Im Rahmen beider Themen wird auch die Thematik der Annotation von Videodaten betrachtet werden.
+		  </font></p>
+	
+	Es gibt zwei Instance Segmentation Ansätze zur Auswahl für die Teilnehmenden:</p>
+
+	<ol>
+  	<li> <a href="https://arxiv.org/pdf/2104.00613.pdf"> The surprising impact of mask-head architecture on novel class segmentation.</a> </p>
+
+	<li> <a href="https://arxiv.org/pdf/2007.14772.pdf"> Sipmask: Spatial information preservation for fast image and video instance segmentation.</a> </p>
+	</ol>
+
+
+	Bildquelle: <a href="https://arxiv.org/pdf/2007.14772.pdf"> Sipmask </a> bzw. eig. Datenquelle.
+
+ </td>
+ </tr>
+</table>
+
+<br><br>
+
+<!-- ============================================================================ -->
+		<hr color="#0060AE" size="5" >  <!--  Trennlinie -->
+		
+		<table width="90%" border="0" align="center" cellspacing="20" cellpadding="0">
+			<tr>
+				<td valign="top" align="left">
+					<a href="../index.html">Home</a></td>
+				<td valign="top" align="left">
+					<a href="news.html">News</a></td>
+				<td valign="top" align="left">
+					<a href="teaching.html">Teaching</a></td>
+				<td valign="top" align="left">
+					<a href="projects.html">Projects</a></td>
+				<td valign="top" align="left">
+					<a href="publications.html">Publications</a></td>
+				<td valign="top" align="left">
+					<a href="team.html">Team</a></td>
+			</tr>
+		</table>		
+
+		<hr color="#0060AE" size="5" >  <!--  Trennlinie -->
+		<br><br>
+
+<!-- ============================================================================ -->
+		
+ </div> <!-- End inhalt -->
+
+<!-- ============================================================================ -->
+
+    <div id="footnote">
+      <a href="http://www.uni-bonn.de"><img id="logo_uni" src="../Images/Logos/logo_uni.png" height="49" name="logo_uni" /></a> 
+<!-- 
+-->
+      <a href="http://net.cs.uni-bonn.de/start/"><img id="logo_cs4" src="../Images/Logos/logo_cs4_100.png" height="49" name="logo_cs4" /></a>
+
+    </div><!-- End footnote-->
+
+<!-- ============================================================================ -->
+
+</div> <!-- End wrapper -->
+<div id="spacer"/>
+</body>
+
+</html>
