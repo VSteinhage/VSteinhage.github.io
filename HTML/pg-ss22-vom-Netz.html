@@ -1,0 +1,352 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text-html" />
+    <title>Informatik 4 - Intelligent Vision Systems Group</title>
+    <!-- Hier das zust&auml;ndinge CSS-->
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <!--[if lte IE 6]>
+  <style type="text/css">
+   @import url(../CSSie5-6.css);
+   </style>
+   <![endif]-->
+</head>
+
+<body id="teaching">
+
+<div id="wrapper">
+
+<!-- ============================================================================ -->
+
+    <div id="kopfbereich">
+		<a href="http://net.cs.uni-bonn.de/wg/intelligent-vision-systems/">
+            	   <h3><img id="logogruppe" src="../Images/Logos/IVS-4-100.png" height="50" /></a></h3>
+<!--
+		<a href="http://net.cs.uni-bonn.de/wg/intelligent-vision-systems/">
+            	   <p>Intelligent Vision Systems Group</p></a>
+-->
+		<a href="http://net.cs.uni-bonn.de/start/">
+		   <h3><img id="logo_cs4" src="../Images/Logos/logo_cs4_100.png" height="50" /></a></h3>
+    </div><!--End kopfbereich-->
+
+<!-- ============================================================================ -->
+
+ <div id="inhalt">
+
+<h3>BA-INF 051 - Projektgruppe Intelligente Sehsysteme</h3>
+
+    <ul class="pre_teaching">
+	    <li class="no_ein"><p>PD Dr. Volker Steinhage</p></li>
+	    <li class="no_ein"><p>Dienstags, 14-16 Uhr</p></li>
+	    <li class="no_ein"><p>Vorbesprechung: Montag, 21. März. 2022, 15.00 Uhr via <a href="https://bbb.informatik.uni-bonn.de/b/vol-ung-npn">https://bbb.informatik.uni-bonn.de/b/vol-ung-npn</a>
+<!--						<script TYPE="text/javascript" LANGUAGE="JavaScript">
+							<!-- den Code vor Browsern verstecken, die kein JavaScript koennen
+							var prefix = 'steinhage'; var domain = 'cs.uni-bonn.de';
+							document.write('<a href=mailto:' + prefix + '@' + domain + '>');
+							document.write(prefix + '@' + domain + '</'+'a>');
+							// Ende des Versteckens vor alten Browsern -->
+						
+
+		</p></li>
+    </ul>
+<br>
+
+<!-- ============================================================================ -->
+<p>
+<b>Themen</b>:
+<!-- ============================================================================ -->
+
+<!-- ============================================================================ -->
+</p><p>
+</p><table id="Feb2017" cellspacing="0" cellpadding="0">
+<tbody><tr valign="top">
+ <td>
+	<div>
+ 	<img src="../Images/Labs/cotr.png" style="display:block" alt="" width="120" border="0">
+	</div>
+ </td>
+ <td width="40"></td>
+ <td> <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+      <b>Iterative Rekalibrierung von Stereokameras</b></font></p><font face="arial,helvetica,sans-serif">
+<!--  ============================================================================ -->
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+		So wie wir Menschen zwei Augen zur Tiefenwahrnehmung nutzen, so können auch zwei Kameras zu einer 
+		Stereokamera zusammengefügt und hierfür genutzt werden. Dabei ist die Genauigkeit von Stereokameras 
+		stark davon abhängig, wie genau die Orientierung der Kameras untereinander bekannt ist. Diese 
+		relative Orientierung wird meist mittels manueller und zeitaufwändiger Kalibrierungsmethoden sichergestellt. 
+		Allerdings kann sich die Ausgangsorientierung der Kameras mit der Zeit leicht verändern, und damit eine 
+		erneute Kalibrierung erforderlich machen. Das Ziel ist es daher, ein vollautomatisiertes Verfahren zur 
+		iterativen und kontinuierlichen Rekalibrierung von Stereokameras zu entwickeln. Es soll auf bestehenden 
+		Python-Code aufgebaut werden, daher sind gute Python-Kenntnisse erforderlich. Zur Bestimmung von 
+		Punktkorrespondenzen zur Kalibrierung soll ein Transformer-Modell 
+		(<a href="https://arxiv.org/abs/2103.14167">Jiang et al. 2021</a>) eingesetzt werden.
+	</font></p>
+	Bildquelle: <a href="https://arxiv.org/abs/2103.14167">Jiang et al. 2021</a>
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+ </font></p></td>
+ </tr>
+</tbody></table>
+<br><br>
+
+<!-- ============================================================================ -->
+<p>
+</p><table id="Feb2017" cellspacing="0" cellpadding="0">
+<tbody><tr valign="top">
+ <td>
+	<div>
+ 	<img src="../Images/Labs/ir2rgb.png" style="display:block" alt="" width="120" border="0">
+	</div>
+ </td>
+ <td width="40"></td>
+ <td> <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+      <b>Kolorierung von Nah-Infrarotbildern</b></font></p><font face="arial,helvetica,sans-serif">
+<!--  ============================================================================ -->
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+		Wild- und Überwachungskameras verwenden häufig unsichtbare Infrarotbeleuchtung und monochrome Bildsensoren um bei 
+		Nacht zumindest Grauwertbilder aufnehmen zu können. Für viele anschließende Aufgaben wie Objekterkennung sind 
+		Farbbilder allerdings besser geeignet. Daher gibt es bereits diverse, oft auf Deep Learning basierende Ansätze, um 
+		solche Aufnahmen zu kolorieren (<a href="https://arxiv.org/abs/1604.02245">Limmer and Lensch 2016</a>, 
+		<a href="https://waseda.pure.elsevier.com/en/publications/infrared-image-colorization-using-a-s-shape-network">Dong et al. 2018</a>, <a href="https://openaccess.thecvf.com/content_CVPRW_2019/papers/PBVS/Mehri_Colorizing_Near_Infrared_Images_Through_a_Cyclic_Adversarial_Approach_of_CVPRW_2019_paper.pdf">Mehri and Sappa 2019</a>). Diese Ansätze sollen vergleichend Evaluiert und auf die Kolorierung von Wildtieraufnahmen angepasst werden. Hierfür sind gute Python-Kenntnisse erforderlich und Erfahrungen mit PyTorch vorteilhaft.
+	  </font></p><p></p><font face="arial,helvetica,sans-serif">
+
+	Bildquelle: <a href="https://openaccess.thecvf.com/content_CVPRW_2019/papers/PBVS/Mehri_Colorizing_Near_Infrared_Images_Through_a_Cyclic_Adversarial_Approach_of_CVPRW_2019_paper.pdf">Mehri and Sappa 2019</a>
+
+      </font>
+      <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+ </font></p></td>
+ </tr>
+</tbody></table>
+<br><br>
+
+<!-- ============================================================================ -->
+
+<p>
+	</p><table id="Feb2017" cellspacing="0" cellpadding="0">
+	<tbody><tr valign="top">
+	 <td>
+		 <img src="../Images/Labs/visTR.png" alt="" width="500" border="0">
+	 </td>
+	 <td width="40"></td>
+	 <td> <p align="justify">
+		  <font face="arial,helvetica,sans-serif">
+		  <b>Improved Instance Segmentation in Videos</b></font></p><font face="arial,helvetica,sans-serif">
+	<!-- ============================================================================ -->
+		  </font>
+		  <p align="justify">
+			  <font face="arial,helvetica,sans-serif">
+		Bei der herkömmlichen Instanz Segmentierung, wird auf dem eingegebenen
+ Bild, die Objektklasse sowie eine pro-pixel Objekt-Maskierung bestimmt.
+ Während dies eine allgemeine Lösung für herkömmliche Daten ist, kann 
+die performanz auf schweren Bildern abfallen. Eine Lösung ist dabei, 
+falls vorhanden, die Kontektinformationen eines ganzen Videoclips zu 
+verwenden um mehr Informationen außerhalb des aktuellen Bilds 
+einzubringen. In diesem Projekt geht es darum zunächst eine kurze 
+Einarbeitung in die Netzwerkarchitektur vorzunehmen. Darauf gefolgt, 
+soll dann auf einem Infrarot Videostream von Kamerafallen gearbeitet 
+werden. Ziel des Projekts ist es erfolgreich auf dem Datensatz und mit 
+dem Neuronal Netz zu arbeiten. Dabei soll eine vergleichende Evaluation 
+mit aktuell vorliegenden Ergebnissen gemacht werden.
+
+		</font></p><ul><font face="arial,helvetica,sans-serif">
+			<li><a href="https://openaccess.thecvf.com/content/CVPR2021/html/Wang_End-to-End_Video_Instance_Segmentation_With_Transformers_CVPR_2021_paper.html">Video Instance Segmentation with Transformers</a></li>
+		</font></ul><font face="arial,helvetica,sans-serif">
+		Bildquelle: <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Wang_End-to-End_Video_Instance_Segmentation_With_Transformers_CVPR_2021_paper.html"> VisTR </a>
+	 </font></td>
+	 </tr>
+	</tbody></table>
+	
+	<br><br>
+	
+<!-- ============================================================================ -->
+
+<!-- ============================================================================ -->
+
+<p>
+	</p><table id="Feb2017" cellspacing="0" cellpadding="0">
+	<tbody><tr valign="top">
+	 <td>
+		 <img src="../Images/Labs/ritm.png" alt="" width="500" border="0">
+	 </td>
+	 <td width="40"></td>
+	 <td> <p align="justify">
+		  <font face="arial,helvetica,sans-serif">
+		  <b>Verbesserung des RITM Annotation Tools</b></font></p><font face="arial,helvetica,sans-serif">
+	<!-- ============================================================================ -->
+		  </font>
+		  <p align="justify">
+			  <font face="arial,helvetica,sans-serif">
+				Im folgenden Thema geht es darum, ein existierendes Instanz-Masken Annotations Tool zu weiter zu entwickeln [1].
+				Hierbei soll ein Smart Propagation Module entwickelt werden, dass mittels Optical Flows den Arbeitsaufwand von Video-Annotationen reduzieren soll [2].
+				Ziel der Projektgruppe wird zunächst die Umsetzung und Implementierung des gennanten Modules sein. Darauf folgen sollen verschiedene qualitative analysen in hinsicht auf Präzision sowie untersuchung verschiedener Optical Flow Architekturen.
+
+		</font></p><ol><font face="arial,helvetica,sans-serif">
+			<li>Reviving Iterative Training with Mask Guidance for Interactive Segmentation <a href="https://arxiv.org/abs/2102.06583">https://arxiv.org/abs/2102.06583</a></li>
+			<li>FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks <a href="https://arxiv.org/abs/1612.01925">https://arxiv.org/abs/1612.01925</a></li>
+		</font></ol><font face="arial,helvetica,sans-serif">
+	 </font></td>
+	 </tr>
+	</tbody></table>
+	
+	<br><br>
+	
+<!-- ============================================================================ -->
+
+
+<!-- ============================================================================ -->
+
+<p>
+</p><table id="Feb2017" cellspacing="0" cellpadding="0">
+<tbody><tr valign="top">
+ <td>
+ 	<img src="../Images/Labs/tracking_sose2022.png" alt="" width="500" border="0">
+ </td>
+ <td width="40"></td>
+ <td> <p align="justify">
+      <font face="arial,helvetica,sans-serif">
+      <b>Instance Segmentation (2 Themen / 2 Projektgruppenteilnehmende)</b></font></p><font face="arial,helvetica,sans-serif">
+<!-- ============================================================================ -->
+      </font>
+      <p align="justify">
+		  <font face="arial,helvetica,sans-serif">
+			Ziel dieser Projektgruppe ist die Implementierung eines Tracking-Algorithmus, der auf Künstlichen Neuronalen Netzen basiert. Dabei wird mit Trainingsdaten aus einem aktuellen Forschungsprojekt gearbeitet. Die Implementierung wird mit Python und PyTorch durchgeführt. Neben der Implementierung des Tracking-Algorithmus wird es eine Einarbeitungsphase in die Annotation von Datensätzen sowie die Instance Segmentation geben.  Zentrale Aufgabe wird die Analyse der Funktionsweise des Tracking-Algorithmus auf den neuen Daten sein und im Folgenden die Erweiterung des vorgegebenen Tracking Ansatzes für die Verwendung von Instance Masks.
+			<br /> 
+			Die Aufgabe des Multi-Objekt Tracking ist es, Objekte in einem Video zu detektieren und sie darin zu verfolgen, d.h., jede Detektion, beispielsweise eine Bounding Box, erhält zusätzlich eine Tracking-ID. So können Individuen einer Klasse voneinander unterschieden und verfolgt werden. Für die Projektgruppe stehen zwei Trackingansätze zur Auswahl:
+			<ol>
+				<li><a href="https://arxiv.org/pdf/2004.01177.pdf">Zhou, Xingyi, Vladlen Koltun, and Philipp Krähenbühl. "Tracking objects as points." European Conference on Computer Vision. Springer, Cham, 2020.</a></li>
+				<li><a href="https://arxiv.org/pdf/1909.12605.pdf">Wang, Zhongdao, et al. "Towards real-time multi-object tracking." European Conference on Computer Vision. Springer, Cham, 2020.</a></li>
+			</ol>
+		  </font></p>
+ </td>
+ </tr>
+</tbody></table>
+
+<br><br>
+
+<!-- ============================================================================ -->
+
+<p>
+	</p><table id="Feb2017" cellspacing="0" cellpadding="0">
+	<tbody><tr valign="top">
+	 <td>
+		 <img src="../Images/Labs/soilgrids800.png" alt="" width="500" border="0">
+	 </td>
+	 <td width="40"></td>
+	 <td> <p align="justify">
+		  <font face="arial,helvetica,sans-serif">
+		  <b>Verarbeitung von Satellitenbildern zur Ertragsprognose</b></font></p><font face="arial,helvetica,sans-serif">
+	<!-- ============================================================================ -->
+		  </font>
+		  <p align="justify">
+			  <font face="arial,helvetica,sans-serif">
+				Frühe und genaue Ertragsprognosen sind wichtig für die Landwirtschaft. Es ist aber schwierig, Daten zu erfassen, die zur Ertragsprognose geeignet sind. 
+				Eine Lösung ist gegeben durch den Einsatz von Satellitenbildern, die Oberflächenreflexionen und klimatische Faktoren über einen langen Zeitraum zuverlässig erfassen. 
+				Unsere Gruppe konnte bereits vielversprechende Resultate durch Einsatz von Extreme Gradient Boosting (XGB) auf Satellitendaten zur Ertragsprognose von Sojabohnen erzielen. 
+				Andere Ansätze haben gezeigt, dass der Einsatz von den Boden beschreibenden Merkmalen die Genauigkeit eines Models noch erhöhen kann. 
+				Ziel der Projektgruppe ist die Integration der SoilGrids Bodendaten (https://soilgrids.org/) in eine bestehende Python Pipeline zur Ertragsprognose. 
+				Es ist auszuwerten, welchen Einfluss die Bodendaten nehmen und ob man die Menge an Merkmalen reduzieren kann. 
+				Am Ende ist es möglich, eine vergleichende Auswertung gegenüber in der Literatur vorgestellten Deep Learning Ansätze zu implementieren 
+				(z.B. <a href="https://www.mdpi.com/2072-4292/12/11/1744">Wang et al. 2020</a>).
+			</font></p>
+	 </td>
+	 </tr>
+	</tbody></table>
+	
+	<br><br>
+
+<!-- ============================================================================ -->
+
+<p>
+	</p><table id="Feb2017" cellspacing="0" cellpadding="0">
+	<tbody><tr valign="top">
+	 <td>
+		 <img src="../Images/Labs/pyqt_gui.png" alt="" width="500" border="0">
+	 </td>
+	 <td width="40"></td>
+	 <td> <p align="justify">
+		  <font face="arial,helvetica,sans-serif">
+		  <b>Entwicklung einer anwenderfreundlichen GUI für Ertragsprognose</b></font></p><font face="arial,helvetica,sans-serif">
+	<!-- ============================================================================ -->
+		  </font>
+		  <p align="justify">
+			  <font face="arial,helvetica,sans-serif">
+				Erträge im Weinbau schwanken jährlich. Für die Weingenossenschaften und den Winzer ist es wichtig, frühzeitig Erträge schätzen zu können. Dadurch können zum einen Logistik 
+				geplant und zum anderen Preise geschätzt werden. Aufbauend auf bestehendem Python Code zur Ertragsprognose soll eine anwenderfreundliche GUI nach dem klassischen Model-View-Controller Modell 
+				(<a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">https://en.wikipedia.org/wiki/Model-view-controller</a>) implementiert werden. 
+				Zuvor müssen Use Cases formuliert werden. Das Ertragsprognosemodel basiert auf XGBoost ((<a href="https://xgboost.readthedocs.io/en/stable/">https://xgboost.readthedocs.io/en/stable/</a>) und 
+				somit können mittels Shapley Values die Prognosen 
+				erklärt werden. Der Anwender soll nützliche Diagramme über die GUI anzeigen können. Gute Python Kenntnisse sind notwendig. Kenntnisse der GUI Entwicklung sind hilfreich, alles Notwendige 
+				kann aber während der Projektgruppe erlernt werden.
+			</font></p>
+	 </td>
+	 </tr>
+	</tbody></table>
+	
+	<br><br>
+	
+<!-- ============================================================================ -->
+
+Termine:
+<ul>
+<li> Prioliste per Email mit Betreff "Prios PG" bis Do, 24.03.2022, 22 Uhr</li>
+<li> Zuordnungsmitteilung bis Mo, 28.03.2022, 18 Uhr </li>
+<li> 2-seitig. Expose (Ziel,Daten und Methoden,Zeitplanung) bis Mo, 04.04.2022, 14 Uhr</li>
+<li> Start der wöchentl. PG-Jour Fixe: Di, 12.04.2022, 14.00 s.t. per BBB mit Präsentationen der ersten Zwischenergebnisse </li>
+</ul>
+<br><br>
+
+<!-- ============================================================================ -->
+		<hr size="5" color="#0060AE">  <!--  Trennlinie -->
+		
+		<table width="90%" cellspacing="20" cellpadding="0" border="0" align="center">
+			<tbody><tr>
+				<td valign="top" align="left">
+					<a href="http://vsteinhage.github.io/index.html">Home</a></td>
+				<td valign="top" align="left">
+					<a href="http://vsteinhage.github.io/HTML/news.html">News</a></td>
+				<td valign="top" align="left">
+					<a href="http://vsteinhage.github.io/HTML/teaching.html">Teaching</a></td>
+				<td valign="top" align="left">
+					<a href="http://vsteinhage.github.io/HTML/projects.html">Projects</a></td>
+				<td valign="top" align="left">
+					<a href="http://vsteinhage.github.io/HTML/publications.html">Publications</a></td>
+				<td valign="top" align="left">
+					<a href="http://vsteinhage.github.io/HTML/team.html">Team</a></td>
+			</tr>
+		</tbody></table>		
+
+		<hr size="5" color="#0060AE">  <!--  Trennlinie -->
+		<br><br>
+
+<!-- ============================================================================ -->
+		
+ </div> <!-- End inhalt -->
+
+<!-- ============================================================================ -->
+
+    <div id="footnote">
+      <a href="http://www.uni-bonn.de"><img id="logo_uni" src="../Images/Logos/logo_uni.png" height="49" name="logo_uni" /></a> 
+<!-- 
+-->
+      <a href="http://net.cs.uni-bonn.de/start/"><img id="logo_cs4" src="../Images/Logos/logo_cs4_100.png" height="49" name="logo_cs4" /></a>
+
+    </div><!-- End footnote-->
+
+<!-- ============================================================================ -->
+
+</div> <!-- End wrapper -->
+<div id="spacer"/>
+</body>
+
+</html>
